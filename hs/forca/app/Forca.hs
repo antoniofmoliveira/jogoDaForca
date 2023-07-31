@@ -1,3 +1,12 @@
+{- | 
+    Module : Forca
+    Description : Jogo da Forca
+    Copyright : (c) 2023 antoniofmoliveira@outlook.com
+    License : MIT
+    Maintainer : antoniofmoliveira@outlook.com
+    Stability : experimental
+-}
+
 module Forca
   ( play
   ) where
@@ -98,6 +107,7 @@ updateRecords records name numErros (Just previousNumErrors) =
 
 {- | Função auxiliar para listRecords usada para juntar keys e values do Data.Map
     de recordes com a função Data.Map.forldrWithKey. -}
+f :: [Char] -> [Char] -> [Char] -> [Char]
 f key value result = result ++ key ++ " " ++ value ++ "\n"
 
 {- | Exibe os recordistas do jogo. -}

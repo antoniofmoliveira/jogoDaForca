@@ -3,32 +3,37 @@ name:               forca
 version:            0.1.0.0
 
 -- A short (one-line) description of the package.
--- synopsis:
+synopsis:           Jogo da Forca
 
 -- A longer description of the package.
--- description:
+description:        primeira tentativa de programar o jogo da forca em haskell 
 
 -- A URL where users can report bugs.
 -- bug-reports:
 
 -- The license under which the package is released.
--- license:
+license:            MIT
 author:             antonio oliveira
 maintainer:         antoniofmoliveira@outlook.com
 
 -- A copyright notice.
--- copyright:
--- category:
+copyright:          (c) 2023 antoniofmoliveira@outlook.com
+category:           game
 extra-source-files: CHANGELOG.md
 
 executable forca
-    main-is:          Main.hs
+  main-is:          Main.hs
 
-    -- Modules included in this executable, other than Main.
-    other-modules: Forca
+  -- Modules included in this executable, other than Main.
+  other-modules:    Forca
 
-    -- LANGUAGE extensions used by modules in this package.
-    -- other-extensions:
-    build-depends:    base ^>=4.17.1.0, containers, split, random
-    hs-source-dirs:   app
-    default-language: Haskell2010
+  -- LANGUAGE extensions used by modules in this package.
+  -- other-extensions:
+  build-depends:
+    , base        ^>=4.17.1.0
+    , containers
+    , random
+    , split
+
+  hs-source-dirs:   app
+  default-language: Haskell2010
