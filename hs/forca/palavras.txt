@@ -1,0 +1,1 @@
+Modifique jogo forca forma utilizar uma lista palavras inicio pergunte numero calcule indice palavra utilizar pela formula

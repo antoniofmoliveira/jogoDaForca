@@ -1,0 +1,4 @@
+joao;0
+joaquim;3
+antonio;3
+jorge;4
