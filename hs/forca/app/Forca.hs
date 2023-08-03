@@ -116,8 +116,7 @@ listRecords name numErrors = do
   records <- loadRecords "forcarecordes.txt"
   let previousNumErrors = Data.Map.lookup name records
       recordsf = updateRecords records name (show numErrors) previousNumErrors
-  putStrLn "\nRecordistas"
-  putStrLn "============"
+  putStrLn "\nRecordistas\n============"
   putStrLn $ Data.Map.foldrWithKey f "" recordsf
 
 {- | Rotina principal do jogo. Recursivo. Recebe a lista dos caracteres digitados, a
@@ -161,4 +160,4 @@ play = do
   texto <- loadFile "palavras.txt"
   name <- playerName
   sel <- selectWord texto
-  game "" sel 0 "name"
+  game "" sel 0 name

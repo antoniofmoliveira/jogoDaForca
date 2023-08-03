@@ -1,0 +1,24 @@
+-- criando projeto
+mkdir typescript-starter
+cd typescript-starter
+npm init -y
+npm install typescript --save-dev
+npm install @types/node --save-dev
+npx tsc --init --rootDir src --outDir build \
+--esModuleInterop --resolveJsonModule --lib es6 \
+--module commonjs --allowJs true --noImplicitAny true
+
+
+-- criando codigo fonte
+mkdir src
+touch src/index.ts
+    console.log('Hello world!')
+
+
+-- compilando
+npx tsc
+
+
+-- executando
+node build/index.js
+

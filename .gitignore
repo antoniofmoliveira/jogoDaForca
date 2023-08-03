@@ -2,3 +2,6 @@
 bin/
 obj/
 dist-newstyle/
+.objs/
+*.class
+node_modules/
