@@ -5,3 +5,4 @@ dist-newstyle/
 .objs/
 *.class
 node_modules/
+_build/
